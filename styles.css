@@ -1,0 +1,82 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #313131;
+  color: white;
+}
+
+.title {
+  border-radius: 5px;
+}
+
+#message-container {
+  background-color: #414141;
+  margin-top: 50px;
+  border-radius: 5px;
+  width: 60%;
+  max-width: 500px;
+  padding: 5px;
+  max-height: 600px;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  text-align: left;
+}
+
+#message-container div {
+  background-color: #525252;
+  padding: 10px;
+}
+
+#message-container p:nth-child(1n) {
+  background-color: #525252;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+#send-container {
+  position: fixed;
+  padding-bottom: 200px;
+  bottom: 0;
+  border-radius: 5px;
+  max-width: 500px;
+  width: 60%;
+  display: flex;
+}
+
+#message-input {
+  background-color: #414141;
+  border-radius: 5px;
+  flex-grow: 1;
+  color: white;
+  height: 20px;
+  border: 0;
+  text-indent: 10px;
+  outline: none;
+  word-wrap: break-word;
+}
+
+#message-input:focus {
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+#send-button {
+  margin-left: 20px;
+  border-radius: 5px;
+  background-color: #525252;
+  color: white;
+  width: 100px;
+  border: 0;
+}
+
+#users-connected p {
+  background-color: #525252;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
